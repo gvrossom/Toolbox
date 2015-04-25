@@ -1,4 +1,10 @@
-Tidy data set contains the same variables as the raw does, but the variables were renamed according to following rules:
+The set of variables that were estimated from these signals are:
+
+    mean(): Mean value
+    std(): Standard deviation
+
+
+Tidy data set contains the variables renamed according to following rules:
 
     All lower case when possible - the variables names were not converted to lower case, since it would make them unreadable. Instead, the variable names were converted to satisfy camlCase rule.
     Descriptive (Diagnosis versus Dx) - the variable names are descriptive, so nothing special should be done.
