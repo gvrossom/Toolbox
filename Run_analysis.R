@@ -5,9 +5,7 @@ load.dataset <- function (set, features, labels) {
   file.label <- paste(prefix, 'y_', set, '.txt', sep = '')
   file.subject <- paste(prefix, 'subject_', set, '.txt', sep = '')
 
-  # Cannot load the data using fread() function.
-  # fread() fails to determine the correct number of columns in dataset.
-  # So we read the data into a data.frame and then transform it into data.table
+  # We read the data into a data.frame and then transform it into data.table
   data <- read.table(file.data)[, features$index]
   names(data) <- features$name
 
